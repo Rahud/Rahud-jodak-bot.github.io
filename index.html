@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashn-Bot</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="Shivo-bot.jpeg" type="image/x-icon">
+    <audio id="audio1" src="A.AAAEQRIC, PHARAØH, Britt - Stereo Hearts (Ft. Kris Norton).mp3"></audio>
+    <audio id="audio2" src="JZyNo - Butta My Bread Ft Lasmid (Lyrics).mp3"></audio>
+    <audio id="audio3" src="Crayon & Ayra Starr - Ngozi (Official Music Video).mp3"></audio>
+    <audio id="audio4" src="Alan x Walkers - Unity.mp3"></audio>
+    <audio id="audio5" src="Faded - Allan Walker.mp3"></audio>
+    <audio id="audio6" src="Chris Brown - Under The Influence (Sped Up) (Audio).mp3"></audio>
+    
+</head>
+<body>
+    
+    <script type="text/javascript">
+        setTimeout(function(){
+            document.getElementById("audio1").play();
+            console.log("Stereo has started playing")
+        }, 8000) 
+
+        setTimeout(function(){
+            document.getElementById("audio2").play();
+            console.log("Butter My Bread has started Playing")
+        }, 145000)
+
+        setTimeout(function(){
+            document.getElementById("audio3").play();
+            console.log("Ngozi has started playing")
+        }, 325000)
+
+        setTimeout(function(){
+            document.getElementById("audio4").play();
+            console.log("Unity has started playing")
+        }, 548000)
+
+        setTimeout(function(){
+            document.getElementById("audio5").play();
+            console.log("Faded has started playing")
+        }, 770000)
+
+        setTimeout(function(){
+            document.getElementById("audio6").play();
+            console.log("Under The Influence has started playing")
+        }, 970000)
+
+    </script>
+
+
+    <script>
+        //Displayed information on window load
+        var review = "Welcome to Rashn-Bot(RB). For inquiry type 'Hi' in the 'Ask me anything search-box' "
+        setTimeout(show_msg, 1000)
+
+        setTimeout(bring, 8000)
+
+        setTimeout(grab, 18000)
+
+
+        function show_msg(){
+            window.alert(review)
+        }
+
+        function bring(){
+            document.getElementById("shivo_kara").style.visibility = "visible"
+        }
+
+        function grab(){
+            document.getElementById("shivo_kara").style.visibility = "collapse"
+        }
+
+    
+    </script>
+
+    <script>
+        //Current time display interval
+        setInterval(myTimer, 1000);
+        
+        function myTimer() {
+          const date = new Date();
+          document.getElementById("demo").innerHTML = date.toLocaleTimeString();
+        }
+
+        //Closing "I don't get what you're saying" popup window
+        function close_msg(){
+            document.getElementById("msg").style.visibility = "collapse"
+            document.getElementById("msg2").style.visibility = "collapse"
+            document.getElementById("msg_shivan").style.visibility = "collapse"
+        }
+
+    </script>
+    
+    <!--Rashn-Bot chat-box container-->
+    <div class="content">
+        <!--Rashn-Bot interaction area including text-area, marquee and Current time display-->
+        <div class="holder">
+            <h1>Jodakians</h1>
+            <textarea title="Text-area" class="prevent-select" id="reply" readonly="readonly" aria-selected="disabled"></textarea> 
+            <div class="counter"><h1 id="demo"></h1></div>
+            <div class="edit"><span id="error"><marquee  id="scrolling_text"></marquee></span></div>
+        </div>
+        
+        <!--User interaction area including 'Ask me anything' search-box and 'Check' button -->
+        <div class="user_text"> 
+            <table class="tab">
+                <tr>
+                    <th><input id="user_question" class="reply" type="text" placeholder="Ask me anything..."></th>
+                    <th><button onclick="feed()" type="submit">Check</button> </th>
+                </tr>
+            </table>
+           
+        </div>
+
+        <!--Error message undefined inputs-->
+        <p id="wrong_msg" class="wrong_msg">Command NoT FouNd in System!!!</p>
+    </div>
+
+        <!--Error message for empty inputs having Shivo as cover-->
+    <p id="msg" class="msg"><img src="Shivo.jpeg" alt="Doro-thie Image"> <br> I don't get what you're saying!!! <span onclick="close_msg()" id="close">&times;</span> </p>
+        <!--Error message for 'Karaman Shivo' command having Karaman as cover-->
+    <p id="msg2" class="msg2"><img src="karashivo.jpg" alt="Kara-Shivo Image"> <br> Kigenyi Abdul Rahman aka Kara-Shivo is the developer for Rashn-Bot(RB)!!! <span onclick="close_msg()" id="close">&times;</span> </p>
+    
+    <p id="msg_shivan" class="msg_shivan"><img src="Shivo.jpeg" alt="Doro-thie Image"> <br> Namitala Dorothy Shivan aka Doro-thie or Shivo. The cover-face for Rashn-Bot(RB) <span onclick="close_msg()" id="close">&times;</span> </p>
+
+    <p id="shivo_kara" class="shivo_kara"><img src="Shivo.jpeg" alt="Doro-thie Image"> <br> <img src="karashivo.jpg" alt="Kara-Shivo Image"> <br> Welcome to Rashn-Bot(RB) </p>
+    
+    <script>
+        //List of candidates
+        let names = ["Kigenyi Abdul Rahman", "Namitala Dorothy Shivan", "Kiwalabye Fahad", "Mpanga Purity Samuel", "Bunjo Robinson Micheal", "Ssenkumba Mark", "Musubika Hasifah", "Nanteza Lizan", "Ssemwanga Jerald", "Kirabo Maria", "Omech Victor", "Anyovi", "Nakawooya Lynnette", "Ogot Chemtai", "Mpanga Sharif", "Emorut Erasmus", "Kibuuka Miriam", "Namugwanya Irene", "Nakanwagi Lynnette", "Nabbosa Tendo", "Kabalokole Betty", "Deborah", "Otim Nicholas", "Ssetimba Andrew", "Monica" , "More pupils will be added soon"]
+        //Defult scroll text display
+        let default_text = "Welcome to Rashn-Bot(RB) a bot created by the Rashn Tech(RT) group. Enjoy using this bot to find out more information about the Jodak candidates 2019 including: Smartest female Jodak candidate 2019. Smartest male Jodak candidate 2019. Total number of Jodak candidates 2019 and many more. Use the Universal-Command; 'Help' to find out what to type in the 'Ask me anything...' search-box!!! Enjoy chatting with me, Rashn!!! "
+        //Scroll text on 'Hi' command
+        let Hi_display = "Hello, I am Rashn and I recommend you to make great use of the 'Help' command to get more help on what to search about in the 'Ask me anything search box' anything that is not in response to the in-built commands shall not be replied to. Thank you!!!"
+        
+
+        /*
+        Default Scroll text displayed when ever the window loads
+        This is made automatic
+        */
+        document.getElementById("scrolling_text").innerHTML = default_text
+
+        //Function after clicking 'Check' button
+        function feed(){
+            var Scroll_command = document.getElementById("scrolling_text");
+            var user_text = document.getElementById("user_question").value;
+            var user_reply = document.getElementById("reply");
+            var display_error = document.getElementById("error");
+            var help = "These are my commands; [Hi]-'This displays greetings and directions on how to interact with me (Rashn-Bot)' [Help]-'This displays my commands', [Kara Shivo]-'This displays information about my (Rashn-Bot) developer', [Jodak candidates 2019]-'This displays Jodak candidates 2019', [Your identity]-'This displays my (Rashn) identity', [Smartest male candidate]-'This displays the smartest male Jodak candidate 2019 ', [Smartest female candidate]-'This displays the smartest female Jodak candidate 2019', [Wise of all candidates]-'This displays the information about the wise of all Jodak candidates 2019', [Total candidates]-'This displays the total number of Jodak candidates 2019', [Picnic giant]-'This displays the picnic giant for Jodak candidates 2019', [Bad days]-'This displays the bad days for Jodak candidates 2019', [Nice days]-'This displays the nice days for Jodak candidates 2019', [Organised candidate]-'This displays the organised Jodak candidate 2019', [Discplined candidate]-'This displays the discplined Jodak candidate 2019' ";
+            var hello = "Hello, welcome to Rashn-Bot(RB). Type 'Help' in the 'Ask me anything search-box' to access the command list containing commands for asking any P.7 Jodak 2019 related question. So how can  I help you!!!";
+            var jodak_pupils ="Jodak candidates 2019 included; " + names[0] + ", " + names[1] + ", " + names[2] + ", " + names[3] + ", " + names[4] + ", " + names[5] + ", " + names[6] + ", " + names[7] + ", " + names[8] + ", " + names[9] + ", " + names[10] + ", " + names[11] + ", " + names[12] + ", " + names[13] + ", " + names[14] + ", " + names[15] + ", " + names[16] + ", " + names[17] + ", " + names[18] + ", " + names[19] + ", " + names[20] + ", " + names[21] + ", " + names[22] + ", " + names[23] + ", " + names[24] + ", " + names[25];
+            var error_message = "Come again please...";
+            var ask_question_error = "Only if it's in rhym with my in-built commands. I am sorry to display this but 'Kigenyi Abdul Rahman' my developer made me in a way that I am supposed to reply to only my in-built commands. My system is JavaScript based, meaning that only inputs that are corresponding with my commands are to be replied to. Sorry for this error message!!! ";
+            var your_identity = "My name is Rashn. I am a mini-bot created by the Rashn Tech (RT) group of programers. In respect to the rules, I am supposed to give you feedback depending on my commands. Any command that does not correspond with my In-built commands shall not be replied to. Make great use of my Universal-Command which is 'Help' in order to check my command list. Revise the command list and you'll be able to enjoy chatting with me!!!";
+            var smartest_male_candidate = "By then the Smartest male candidate or candidates were Ssetimba Andrew and Kigenyi Abdul Rahman";
+            var smartest_female_candidate = "Okay, since candidates used to conduct assemblies, the smartest candidates were mentioned at this time. By then the smartest female candidate was none other than 'Namitala Dorothy Shivan'. This candidate conducted herself perfectly in that she was ever smart and elegant. At all times this candidate was never found in any coupling issues, she never thought of being in a relationship. If you want to know more about Shivan, type 'Namitala Dorothy Shivan' as I have displayed it! ";
+            var namitala = "Namitala Dorothy Shivan was a candidate at Jodak Nursery and Primary School in 2019. She is now a smart student at Namirembe Hillside Secondary School. She is one of the best students at Namirembe Hillside. Namitala has lots of siblings, among these include those that she cares for the most. She loves her little sibling the most. Namitala is a friendly and caring angel, she is positive to all kinds of people, be it rude or unpleasunt. For privacy issues, nothing much can be described about Namitala. For integrated information about Namitala please type '014' or '210' or '194' and you'll be directed!!! Thank you!!! ";
+            var wise_of_all = "The wise of all Jodak candidates 2019 can't be mentioned unless you want the whole screen to be filled with all the P.7 pupils of 2019 because they were all wise and no one was unwise, unperseptive or dumb!!!";
+            var total = "They were 45 candidates who sat PLE(Primary Leaving Examinations) at Jodak in 2019. Those in stream South were sent to sit their PLE(Primary Leaving Examinations) at another school that I was not made clear in my programmed system!!!"
+            var picnic_giant = "Of course the picnic giant was none other than 'Jerald' only because he was a big man by that time. All the candidates tried very hard to make it up for the day. Such as Namitala Dorothy Shivan, she really managed to look spectacular!!!"
+            var kara_shivo = "Well Kigenyi Abdul Rahman aka Kara-Shivo is the developer and content creator of this blog. He put in a lot to make sure that this blog stands out perfectly and smoothly. More appreciaton goes to our Cover-face. For more data about Kara-Shivo type 'Kigenyi Abdul Rahman'"
+            var tough_tacher = "The tough teacher to Jodak candidates 2019 was Mr. Ebogu Simon. This man used to ask drinks from these candidates claiming to get energy for marking their books. If any candidate was found unmarked, the punishment would be not attending Mr. Eboug's English lessons. This man used to get nice food from some candidates' parents like Bunjo Robinson Micheal whose aunt used to give Mr. Ebogu deep fried chicken on vistation day. A lot can be said about Ebogu only if you meet with any Jodak candidate 2019. Thank you, I remain Rashn replying to you!!!"
+            var bad_days = "Hmm, bad days at Jodak were only Sundays and Saturdays because the candidates were threatened by Mr. Ebogu about marking their books. Mr. Ebogu used to arrive at school every early Saturday and Sunday mornings only to maybe get some drinks from the candidates(These are not my words, they are my developers words). Every after Saturday and Sunday lunch hours, Mr. Ebogu hurriedly disappeared from school rushing to go 'check his placed bets for withdrawal' as he used to place bets on Fridays claiming that the odds were high!!! so he could get his cash on Saturdays and Sundays!!!"
+            var nice_days = "Ohh, the nice days were of course the 'Vistation days', 'Leavers Party(Picnic)', 'Sundays' as all candidates got chance to meet with their beloved parents and guardians, party with their friends and play around respectively. "
+            var kigenyi_abdul_rahman = "Kigenyi Abudl Rahman is a well organised programmer, persistent to his work and overall active achievement attainer. He serves to be the developer of this amazing blog if am to mention that!!!"
+            var organised_candidate= "All candidates were organised and well managed at all times. No one could have missed out being organised because they were all candidates."
+            var discplined_candidate = "The candidates were equally discplined though among them lived 'Namitala Dorothy Shivan' who showed friendship to all her fellow candidates. In a way of rewarding her, Rashn-Bot was built in regards to 'Namitala Dorothy Shivan' that's why she is the cover-face for me(Rashn-Bot(RB))!!! "
+            var zero_one_four = "Thank you for using Rashn-Bot. Dorothy is a Uganda by nation, she has a famous way of look in her face. Her beauty is a glowing candle in a dark room. Her lips are a shiny as a red apple. Her walk is a twinkle star. Her smile is a shock wave on an ocean. Her hair is pure cotton. Her wrists are braceletes. Her accent is sound of singing birds. No gentleman has ever witnessed her anger because she tries to make sure that she retains her dignity. Much has been displayed about Dorothy, so we recommend you to stop on this information. Nothing much can be revealed about 'Namitala Dorothy Shivan. Thank you!!!'"
+            var control = "Don't forget to scroll the text-area up and down for easy navigaton and understading of displayed information!!! For simplicity, whenever you type a command, scroll text-area up and start reading from top!!!"
+            var control_jodak_candidates = "Information concerning Jodak candidates 2019 is displayed in text-area. Scroll text-area up and start reading from top"
+            var control_identity = "Rashn-Bot identity is revealed in text-area. Just scroll text-area up and start reading from top!!!"
+            var control_tough_teahcer = "Description about the tough teacher is displayed in text-area. Scroll up to start reading from top!!!"
+            var control_bad_days = "Information about bad days for Jodak candidates 2019 is displayed in text-area. Scroll text-area up to start reading from top!!!"
+            var control_picnic_giant = "Picnic giant description is shown in text-area. Scroll text-area up to start reading from top"
+            var control_nice_days = "Content about 'Nice days' is shown in text-area. Scroll text-area up to start reading from top!!!"
+            var control_organised_candidate = "Information for organised candidate is shown in text-area. Scroll text-area up to start reading from top!!!"
+            var control_discplined_candidate = "Appreciaton about the discplined candidate is shown in text-area. Scroll text-area up to start reading from top!!!"
+            var control_014_210_194 = "If password is valid, information about Namitala is shown in text-area. Scroll up to start reading from top!!! "
+
+
+
+            user_text == user_text
+            //If user types 'Hi'
+            if(user_text == "Hi") {
+                user_reply.innerHTML = hello
+                Scroll_command.innerHTML = Hi_display
+                window.alert(control)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types nothing
+            else if(user_text == ""){
+                user_reply.innerHTML = error_message
+                document.getElementById("msg").style.visibility = "visible"
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Jodak candidates 2019'
+            else if(user_text == "Jodak candidates 2019"){
+                user_reply.innerHTML = jodak_pupils
+                window.alert(control_jodak_candidates)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            else
+            //If user types 'Can I ask you a question'
+            if(user_text == "Can I ask you a question"){
+                user_reply.innerHTML = ask_question_error 
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Your identity'
+            else if(user_text == "Your identity"){
+                user_reply.innerHTML = your_identity
+                window.alert(control_identity)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Smartest male candidate'
+            else if(user_text == "Smartest male candidate"){
+                user_reply.innerHTML = smartest_male_candidate
+                window.alert(control)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Smartest female candidate'
+            else if(user_text == "Smartest female candidate"){
+                user_reply.innerHTML = smartest_female_candidate
+                window.alert(control)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Wise of all candidates'
+            else if(user_text == "Wise of all candidates"){
+                user_reply.innerHTML = wise_of_all
+                window.alert(control)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Total candidates'
+            else if(user_text == "Total candidates"){
+                user_reply.innerHTML = total
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Help'
+            else if(user_text == "Help"){
+                user_reply.innerHTML = help 
+                window.alert(control)  
+                document.getElementById("wrong_msg").style.visibility = "collapse" 
+            }
+            //If user types 'Picnic giant'
+            else if(user_text == "Picnic giant"){
+                user_reply.innerHTML = picnic_giant
+                window.alert(control_picnic_giant)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Karaman Shivo'
+            else if(user_text == "Kara Shivo"){
+                user_reply.innerHTML = kara_shivo
+                document.getElementById("msg2").style.visibility = "visible"
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Namitala Dorothy Shivan'
+            else if(user_text == "Namitala Dorothy Shivan"){
+                user_reply.innerHTML = namitala
+                document.getElementById("msg_shivan").style.visibility = "visible"
+                
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Kigenyi Abdul Rahman'
+            else if(user_text == "Kigenyi Abdul Rahman"){
+                user_reply.innerHTML = kigenyi_abdul_rahman
+                document.getElementById("msg2").style.visibility = "visible"
+            }
+            //If user types 'Tough teacher'
+            else if(user_text == "Tough teacher"){
+                user_reply.innerHTML = tough_tacher
+                window.alert(control_tough_teahcer)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Bad days'
+            else if(user_text == "Bad days"){
+                user_reply.innerHTML = bad_days
+                window.alert(control_bad_days)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Nice days'
+            else if(user_text == "Nice days"){
+                user_reply.innerHTML = nice_days
+                window.alert(nice_days)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Organised candidate'
+            else if(user_text == "Organised candidate"){
+                user_reply.innerHTML = organised_candidate
+                window.alert(control_organised_candidate)
+                document.getElementById("wrong_msg").style.visibility = "collapse"
+            }
+            //If user types 'Discplined candidate'
+            else if(user_text == "Discplined candidate"){
+                user_reply.innerHTML = discplined_candidate
+                window.alert(control_discplined_candidate)
+
+            }
+            //If user types '014'
+            else if(user_text == "014"){
+                var passc = "Karashivo"
+                var passcc = "Dorothie"
+                var passs = passc + passc.length + passcc + passcc.length
+                code = prompt("Password")
+                if(code == passs){
+                    user_reply.innerHTML = zero_one_four
+                }
+                else{
+                    user_reply.innerHTML = "Invalid Passcode. Information won't be displayed"
+                    window.alert(control_014_210_194)
+                }
+            }
+            //If user types '210'
+            else if(user_text == "210"){
+                var passc = "Karashivo"
+                var passcc = "Dorothie"
+                var passs = passc + passc.length + passcc + passcc.length
+                code = prompt("Password")
+                if(code == passs){
+                    user_reply.innerHTML = zero_one_four
+                }
+                else{
+                    user_reply.innerHTML = "Invalid Passcode. Information won't be displayed"
+                    window.alert(control_014_210_194)
+                }
+            }
+            //If user types '194'
+            else if(user_text == "194"){
+                var passc = "Karashivo"
+                var passcc = "Dorothie"
+                var passs = passc + passc.length + passcc + passcc.length
+                code = prompt("Password")
+                if(code == passs){
+                    user_reply.innerHTML = zero_one_four
+                }
+                else{
+                    user_reply.innerHTML = "Invalid Passcode. Information won't be displayed"
+                    window.alert(control_014_210_194)
+                }
+            }
+            //If user types something not related to above commands such as 'wkfgr'
+            else{
+                user_reply.innerHTML = "Invalid system command / Wrong spelling / Wrong format!!!"
+                document.getElementById("wrong_msg").style.visibility = "visible"
+            }
+
+        }
+    </script>
+
+
+</body>
+</html>

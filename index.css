@@ -1,0 +1,796 @@
+*{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-top: 5px;
+    background:url("Shivo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1900px;
+}
+.content{
+    margin-top: 100px;
+    background: rgb(107, 183, 124);
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    box-shadow: inset 0 0 30px 0 red;
+}
+.holder{
+    background: rgb(124, 124, 41);
+    text-align: center;
+    height: 200px;
+    border-radius: 30px;
+    border: 2px solid gray;
+    box-shadow: inset 0 0 30px 0 white;
+}
+.holder textarea{
+    background: white;
+}
+.holder h1{
+    font-variant-caps: all-petite-caps;
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+    background: none;
+}
+.user_text{
+    background: rgb(250, 233, 84);
+    padding: 6px;
+    box-shadow: inset 0 0 10px 0 white;
+    border: 2px solid rgb(165, 195, 27);
+    border-radius: 20px;
+}
+
+.user_text table tr th{
+    background: rgb(250, 233, 84);
+}
+
+
+.user_text input{
+    border: 2px solid gray;
+    padding: 5px;
+    width: 400px;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: inset 0 0 5px 0 white;
+    border-radius: 30px;
+}
+.user_text button{
+    width: 80px;
+    padding: 5px;
+    font-weight: bolder;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    background: white;
+    box-shadow: inset 0 0 2px 0 black;
+}
+.user_text button:hover{
+    box-shadow: inset 0 0 5px 0 black;
+    font-variant-caps: all-petite-caps;
+}
+
+::placeholder{
+    font-size: 20px;
+    padding: 108px;
+    font-weight: bolder;
+    color: white;
+    background: none;
+}
+.tab{
+    border-collapse: collapse;
+
+}
+.prevent-select{
+    font-size: 20px;
+    width: 450px;
+    height: 100px;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.counter{
+    width: 500px;
+    border: 2px solid yellow;
+    margin-top: 150px;
+    text-align: center;
+    background: orange;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 5px;
+    border: none;
+    margin-right: 500px;
+    box-shadow: inset 0 0 30px 0 red;
+}
+
+.edit{
+    width: 500px;
+    border: 2px solid yellow;
+    margin-top: 10px;
+    text-align: center;
+    background: orange;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    margin-right: 500px;
+    box-shadow: inset 0 0 30px 0 red;
+}
+
+.edit span{
+    background: orange;
+    box-shadow: inset 0 0 30px 0 red;
+}
+
+.edit marquee{
+    background: black;
+    border-radius: 30px;
+}
+
+.shivo_kara{
+    position: absolute;
+    padding: 40px;
+    text-align: center;
+    left: auto;
+    right: auto;
+    width: 500px;
+    height: 400px;
+    top: 100px;
+    font-size: 40px;
+    color: red;
+    font-weight: bolder;
+    box-shadow: inset 0 0 30px 0 black;
+    border-radius: 30px;
+    visibility: collapse;
+    background: lightcyan;
+    scale: 1.2 1.2;
+}
+
+.shivo_kara img{
+    width: 200px;
+    animation: go2 2s ease-in-out  infinite;
+}
+
+@keyframes go2{
+    50%{
+        scale: 1.1;
+    }
+}
+
+.msg{
+    position: absolute;
+    text-align: center;
+    padding: 40px;
+    left: 500px;
+    right: auto;
+    width: 200px;
+    top: 250px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: inset 0 0 30px 0 black;
+    color: red;
+    border-radius: 30px;
+    visibility: collapse;
+    background: lightcyan;
+    scale: 2 2;
+    animation: enter 2s ease-out;
+}
+
+@keyframes enter{
+    10%{
+        scale: 1.1 1.1;
+    }
+}
+
+.msg img{
+    width: 100px;
+    animation: go 2s ease-in-out  infinite;
+}
+
+@keyframes go{
+    50%{
+        scale: 1.2;
+    }
+}
+
+.msg2{
+    position: absolute;
+    text-align: center;
+    padding: 40px;
+    left: 550px;
+    right: auto;
+    width: 200px;
+    top: 150px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    box-shadow: inset 0 0 30px 0 black;
+    color: red;
+    border-radius: 30px;
+    visibility: collapse;
+    background: lightcyan;
+    scale: 2 2;
+    animation: enter 2s ease-out;
+}
+
+@keyframes enter{
+    20%{
+        scale: 2 2;
+    }
+}
+
+.msg2 img{
+    width: 100px;
+    animation: go 2s ease-in-out  infinite;
+}
+
+@keyframes go{
+    50%{
+        scale: 1.3;
+    }
+}
+
+#close{
+    background: black;
+    position: absolute;
+    width: 20px;
+    left: 230px;
+    top: 10px;
+    cursor: pointer;
+}
+
+#close:hover{
+    animation: move 5s ease-in-out infinite;
+}
+
+.close{
+    color: red;
+}
+
+@keyframes move{
+    10%{
+        scale: 2;
+        border-radius: 0px;
+    }
+}
+
+.msg_shivan{
+    position: absolute;
+    text-align: center;
+    padding: 40px;
+    left: 500px;
+    right: auto;
+    width: 200px;
+    top: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 10px;
+    box-shadow: inset 0 0 30px 0 black;
+    color: rgb(217, 124, 42);
+    border-radius: 30px;
+    visibility: collapse;
+    background: lightcyan;
+    scale: 2.5 2.5;
+}
+
+.msg_shivan img{
+    width: 100px;
+    animation: go 2s ease-in-out  infinite;
+}
+
+.wrong_msg{
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    background: black;
+    border: 2px solid white;
+    color: red;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-align: center;
+    visibility: collapse;
+}
+
+.wrong_msg:hover{
+    animation: up 2s ease-in-out infinite;
+}
+
+@keyframes up{
+    10%{
+        scale: 1.1;
+        border-radius: 0px;
+    }
+}
+
+.top_heading{
+    background: none;
+}
+
+@media only screen and (max-width: 724px){
+    *{
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: safe;
+        width: auto;
+    }
+
+    .shivo_kara{
+        position: absolute;
+        text-align: center;
+        padding: 40px;
+        font-size: 50px;
+        font-weight: bolder;
+        color: red;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        height: 574px;
+        top: 10px;
+        box-shadow: inset 0 0 30px 0 black;
+        border-radius: 30px;
+        visibility: collapse;
+        background: lightcyan;
+        scale: 1 1;
+    }
+    
+    .shivo_kara img{
+        width: 200px;
+    }
+
+
+
+
+    .wrong_msg{
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        font-size: 25px;
+    }
+    .user_text{
+        width: 420px;
+    }
+    .user_text input{
+        width: 300px;
+        border: 5px solid gray;
+        font-size: 30px;
+    }
+    .user_text button{
+        font-size: 20px;
+        padding: 2px;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        border-collapse: collapse;
+    }
+    .holder{
+        width: 400px;
+        height: 400px;
+    }
+    .holder h1{
+        font-size: 70px;
+    }
+    .prevent-select{
+        width: 350px;
+        height: 200px;
+        font-size: 30px; 
+        border: 2px solid gray;
+        box-shadow: inset 0 0 20px 0 black;
+    }  
+    ::placeholder{
+        font-size: 20px;
+        padding: 20px;
+        font-weight: bolder;
+        color: white;
+        background: none;
+    }
+    .counter h1{
+        font-size: 35px;
+        color: white;
+    }
+    .counter{
+        width: 200px;
+        border-radius: 30px;
+        margin-bottom: 0px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 130px;
+        border-radius: 30px;
+    }
+
+    .msg{
+        position: absolute;
+        text-align: center;
+        padding: 40px;
+        left: 80px;
+        right: auto;
+        width: 150px;
+        height: 300px;
+        top: 180px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        box-shadow: inset 0 0 30px 0 black;
+        color: red;
+        border-radius: 30px;
+        visibility: collapse;
+        background: lightcyan;
+        scale: 1.5 1.5;
+    }
+
+    .msg img{
+        width: 160px;
+        animation: go 2s ease-in-out  infinite;
+    }
+
+    @keyframes go{
+        50%{
+        scale: 1.1;
+        }
+    }
+
+    .msg2{
+        position: absolute;
+        text-align: center;
+        padding: 40px;
+        left: 80px;
+        right: auto;
+        width: 150px;
+        height: 300px;
+        top: 180px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bolder;
+        font-size: 20px;
+        box-shadow: inset 0 0 30px 0 black;
+        color: red;
+        border-radius: 30px;
+        visibility: collapse;
+        background: lightcyan;
+        scale: 1.5 1.5;
+    }
+
+    .msg2 img{
+        width: 160px;
+        animation: go 2s ease-in-out  infinite;
+    }
+
+    @keyframes go{
+        50%{
+        scale: 1.1;
+        }
+    }
+    
+    #close{
+        background: black;
+        position: absolute;
+        width: 20px;
+        left: 20px;
+        top: 2px;
+        cursor: pointer;
+    }
+
+    .msg_shivan{
+        left: 120px;
+        right: auto;
+        width: 90px;
+        top: 170px;
+        height: 260px;
+        font-size: 14px;
+        padding: 35px;
+        scale: 2 2;
+        visibility: collapse;
+    }
+
+    .msg_shivan img{
+        width: 100px;
+        animation: go 2s ease-in-out  infinite;
+    }
+
+    @keyframes go{
+        50%{
+        scale: 1.1;
+        }
+    }
+
+    .edit{
+        width: 330px;
+        border: 2px solid yellow;
+        margin-top: 10px;
+        text-align: center;
+        background: orange;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 10px;
+        letter-spacing: 3px;
+        font-weight: bolder;
+        font-size: 20px;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;        
+    }
+
+    .content{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        padding: 10px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
+        height: 500px;
+    }
+
+    .holder{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+
+        width: auto;
+    }
+
+    .prevent-select{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 300px;
+    }
+
+    .user_text{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+
+    .user_text table tr th input{
+        margin-left: auto;
+        margin-right: auto;
+        width: 230px;
+        padding: 5px;  
+    }
+
+    .user_text table tr th button{
+        width: auto;  
+        border-radius: 30px;
+    }
+
+}
+ 
+
+@media only screen and (max-width: 360px){
+    .shivo_kara{
+        position: absolute;
+        text-align: center;
+        padding: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        top: 10px;
+        box-shadow: inset 0 0 30px 0 black;
+        border-radius: 30px;
+        visibility: collapse;
+        background: lightcyan;
+        scale: 1 1;
+    }
+    
+    .shivo_kara img{
+        width: 220px;
+
+    }
+    
+
+    .msg{
+        left: 65px;
+        width: 150px;
+        top: 150px;
+        height: 300px;
+        visibility: collapse;
+    }
+
+    .msg img{
+        width: 160px;
+    }
+
+    .msg2{
+        left: 65px;
+        width: 150px;
+        top: 150px;
+        height: 300px;
+        visibility: collapse;
+    }
+
+    .msg2 img{
+        width: 160px;
+    }
+
+    .msg_shivan{
+        top: 200px;
+        scale: 2 2;
+        visibility: collapse;
+    }
+    
+    .msg_shivan img{
+        width: 100px;
+    }
+
+    .prevent-select{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+    }
+
+    .holder h1{
+        font-size: 50px;
+    }
+
+    #demo{
+        font-size: 35px;
+    }
+
+    .user_text{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        margin-top: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .user_text table tr th input{
+        width: 230px;
+    }
+
+    .user_text table tr th button{
+        width: 78px;
+        padding: 5px;
+    }
+
+    ::placeholder{
+        padding: 10px;
+    }
+
+    .edit{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        border-radius: 30px;
+    }
+
+    .content{
+        margin-top: auto;
+    }
+
+    .counter{
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        padding: 5px;
+        margin-top: 210px;
+        border-radius: 20px;
+    }
+
+    .wrong_msg{
+        width: 340px;
+        letter-spacing: 5px;
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width: 280px){
+    .shivo_kara{
+        position: absolute;
+        text-align: center;
+        padding: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        top: 1px;
+        box-shadow: inset 0 0 30px 0 black;
+        border-radius: 30px;
+        visibility: collapse;
+        background: lightcyan;
+        scale: 1 1;
+    }
+    
+    .shivo_kara img{
+        width: 180px;
+    }
+    
+    .prevent-select{
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+
+    .user_text{
+        margin-left: 0px;
+        margin-right: auto;
+        width: 250px;
+    }
+
+    .user_text table tr th input{
+        width: 150px;
+    }
+
+    ::placeholder{
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .msg_shivan{
+        padding: 10px;
+        top: 250px;
+        left: 80px;
+        right: auto;
+        width: 100px;
+        font-size: 14px;
+        color: rgb(217, 124, 42);
+        scale: 2 2;
+        visibility: collapse;
+    }
+
+    .msg_shivan img{
+        width: 60px;
+    }
+    
+    .edit{
+        width: auto;
+    }
+
+    .msg{
+        left: 50px;
+        right: auto;
+        width: 100px;
+        top: 150px;
+        height: 300px;
+    }
+
+    .msg img{
+        width: 110px;
+    }
+
+    .msg2{
+        left: 50px;
+        right: auto;
+        width: 100px;
+        top: 150px;
+        height: 300px;
+        font-size: 18px;
+    }
+
+    .msg2 img{
+        width: 110px;
+    }
+
+    .counter{
+        margin-top: 150px;
+    }
+
+    .wrong_msg{
+        margin-right: auto;
+        margin-left: auto;
+        width: 250px;
+    }
+}
+
